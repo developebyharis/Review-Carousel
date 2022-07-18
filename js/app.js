@@ -42,13 +42,38 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
+
 // set starting items
 
 let currentItem = 0;
 
 // load initial items
 window.addEventListener(".DOMContentLoader", function() {
-   const item = review[currentItem];
-   img.src = item.img;
-
+ showPerson(currentItem);
 });
+
+
+function showPerson() {
+    const item = review[person];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = IIRFilterNode.job;
+    info.textContent = item.text;
+}
+
+nextBtn.addEventListener("click",  function (){
+    currentItem++;
+    if (currentItem > review.length - 1) {
+        curretnItem = 0;
+        showPerson();
+    }
+});
+prevBtn.addEventListener("click",  function (){
+    currentItem--;
+    if (currentItem < 0) {
+        currentItem = review.length - 1;
+        showPerson();
+    }
+});
+
+
