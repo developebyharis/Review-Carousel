@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Review Carousel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1>hi</h1>
-    <h1>haris khan</h1>
-    
+
+    <div class="header text-center ">
+        <h1 class="">Review Carousel</h1>
+    </div>
+    <div class="review">
+        <div class="review-items">
+            <img src="img/albert-dera-ILip77SbmOE-unsplash.jpg" id="person-img" alt="albert">
+            <h5 class="text-center name" id="author">Albert</h5>
+            <h6 class="text-center text-primary" id="job">UI Designer</h6>
+            <p class="text-center" id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere iste accusantium. Quae, aperiam magnam. Maiores eum tempore delectus quae et dolorem porro est. Deleniti veritatis voluptates autem temporibus et?</p>
+        </div>
+        <div class="text-center button-container">
+            <i class="fa fa-angle-left text-primary prev-btn" style="font-size: 30px; font-weight:bold"></i>
+            <i class="fa fa-angle-right text-primary next-btn" style="font-size: 30px; font-weight:bold"></i>
+        </div>
+        <div class="text-center">
+        <button class="btn btn-outline-primary random-btn">Surprise ME</button>
+        </div>
+    </div>
+
+
+         <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/ea29d6119c.js"></script>
+    <!-- Script  -->
+    <script src="js/app.js"></script>
+	
 </body>
+
 </html>
